@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CivicDesk.Domain", "CivicDesk.Domain\CivicDesk.Domain.csproj", "{72E4095D-D860-447E-AD38-13D2D93CF08B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CivicDesk.Repository", "CivicDesk.Repository\CivicDesk.Repository.csproj", "{3B537B88-26D9-4D6C-BFC1-53305878C39F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CivicDesk.Service", "CivicDesk.Service\CivicDesk.Service.csproj", "{2865515A-76CC-4A35-9AA5-04C183B04DEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CivicDesk.Web", "CivicDesk.Web\CivicDesk.Web.csproj", "{C2484832-733F-467C-8CEC-2835399EE2D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72E4095D-D860-447E-AD38-13D2D93CF08B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E4095D-D860-447E-AD38-13D2D93CF08B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E4095D-D860-447E-AD38-13D2D93CF08B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E4095D-D860-447E-AD38-13D2D93CF08B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B537B88-26D9-4D6C-BFC1-53305878C39F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B537B88-26D9-4D6C-BFC1-53305878C39F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B537B88-26D9-4D6C-BFC1-53305878C39F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B537B88-26D9-4D6C-BFC1-53305878C39F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2865515A-76CC-4A35-9AA5-04C183B04DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2865515A-76CC-4A35-9AA5-04C183B04DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2865515A-76CC-4A35-9AA5-04C183B04DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2865515A-76CC-4A35-9AA5-04C183B04DEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2484832-733F-467C-8CEC-2835399EE2D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2484832-733F-467C-8CEC-2835399EE2D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2484832-733F-467C-8CEC-2835399EE2D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2484832-733F-467C-8CEC-2835399EE2D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
