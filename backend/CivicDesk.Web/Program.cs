@@ -1,4 +1,8 @@
 using CivicDesk.Repository.Context;
+using CivicDesk.Repository.Implementation;
+using CivicDesk.Repository.Interface;
+using CivicDesk.Service.Implementation;
+using CivicDesk.Service.Interface;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +15,12 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddOpenApi();
 builder.Services.AddControllers();
+
+// Repositories
+builder.Services.AddScoped<ICityRepository, CityRepository>();
+
+// Services
+builder.Services.AddScoped<ICityService, CityService>();
 
 var app = builder.Build();
 
