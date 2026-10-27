@@ -1,6 +1,7 @@
 using CivicDesk.Repository.Context;
 using CivicDesk.Repository.Implementation;
 using CivicDesk.Repository.Interface;
+using CivicDesk.Repository.Seed;
 using CivicDesk.Service.Implementation;
 using CivicDesk.Service.Interface;
 using Microsoft.EntityFrameworkCore;
@@ -18,11 +19,21 @@ builder.Services.AddControllers();
 
 // Repositories
 builder.Services.AddScoped<ICityRepository, CityRepository>();
+builder.Services.AddScoped<IMunicipalityRepository, MunicipalityRepository>();
 
 // Services
 builder.Services.AddScoped<ICityService, CityService>();
+builder.Services.AddScoped<IMunicipalityService, MunicipalityService>();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider
+        .GetRequiredService<ApplicationDbContext>();
+
+    await LocationSeeder.SeedAsync(context);
+}
 
 if (app.Environment.IsDevelopment())
 {
